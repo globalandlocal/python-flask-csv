@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block Title %}
+    Success load
+{% endblock %} | Flask app
+
+{% block h11 %}
+    <h1>Find  next results:</h1>
+    {% for i in data %}
+        <p>{{i}}</p>
+    {% endfor%}
+{% endblock %}

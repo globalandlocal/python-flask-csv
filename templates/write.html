@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block Title %}
+    From Delete
+{% endblock %} | Flask app
+
+{% block h11 %}
+    <h1>Choose your  CSV file for del his values:</h1>
+    <h2>keys from CSV: {{p}}</h2>
+    <form action="" method="POST" enctype="multipart/form-data" >
+        <input type="file" name="file">
+        <input type="text" name="column">
+        <input type="text" name="search">
+        <input type=submit value=Delete></form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block Title %}
+    From Delete
+{% endblock %} | Flask app
+
+{% block h11 %}
+    <h1>Del values:</h1>
+    {% for i in deldata %}
+        {{i}}
+    {% endfor %}
+{% endblock %}

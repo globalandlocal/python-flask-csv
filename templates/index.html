@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block Title %}
+    Main Page
+{% endblock %}
+{% block h11 %}
+    <h1>Hello Comrade </h1>
+    <h2>it's my first project</h2>
+    <h1>Choose your  CSV file for read:</h1>
+    <h2>Keys from CSV: {{p}}</h2>
+    <form action="" method="POST" enctype="multipart/form-data" >
+        <input type="file" name="file">
+        <input type="text" name="column">
+        <input type="text" name="search">
+        <input type=submit value=Search></form>
+{% endblock %}
